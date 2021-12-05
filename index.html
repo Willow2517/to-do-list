@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Willow's To-Do List</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/shortcut_icon.png">
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/new-to-do.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="todo">
+        <div class="todo__header">
+            Мой список дел
+        </div>
+
+        <div class="todo-input">
+            <input type="text" id="todo-input__text" onkeydown="addTaskEnter(this)"> 
+            
+            <button id="todo-input__button">
+                Добавить
+            </button>
+        </div>
+
+        <div class="todo-list"></div>
+
+        <div class="todo-buttons">
+            <button onclick="todoClear();" class="todo-buttons__clear">Очистить</button>
+        </div>
+    </div>
+    <script></script>
+</body>
+</html>
